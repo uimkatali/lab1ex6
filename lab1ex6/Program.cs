@@ -7,7 +7,19 @@
         */
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello");
+            double a, b, c;
+            a = Convert.ToDouble(Console.ReadLine());
+            b = Convert.ToDouble(Console.ReadLine());
+            c = Convert.ToDouble(Console.ReadLine());
+
+            double[] numberList = new double[]{ a, b, c } ;
+            Array.Sort(numberList);
+            foreach(double number in numberList.Reverse())
+            {
+                Console.WriteLine(number);
+            }
+            
+
         }
     }
 }
